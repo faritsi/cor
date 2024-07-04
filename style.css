@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url('https://th.bing.com/th/id/OIP.ZP5AcRfAYqu0fcrliQcC2gAAAA?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.balance-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.balance {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.balance label,
+.balance p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.balance input {
+    margin-bottom: 5px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.slots {
+    display: flex;
+}
+
+.slot {
+    font-size: 2.5rem;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.1s;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .slot {
+        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+    }
+
+    button {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+
+    .balance-container {
+        justify-content: center;
+    }
+
+    .balance {
+        align-items: center;
+        text-align: center;
+    }
+
+    .balance label,
+    .balance p {
+        margin-bottom: 10px;
+    }
+}

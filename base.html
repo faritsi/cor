@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesin Slot Zeus Gacor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="balance-container">
+        <div class="balance">
+            <label for="deposit">Deposit (Rp): </label>
+            <input type="number" id="deposit" min="10000" value="100000" step="10000">
+            <button id="deposit-button" onclick="addBalance()">Tambah Saldo</button>
+            <p>Saldo: <span id="balance">0</span></p>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Mesin Slot Zeus Gacor</h1>
+        <div class="slot-machine">
+            <div class="slots" id="slots">
+                <div class="slot">🍒</div>
+                <div class="slot">🍋</div>
+                <div class="slot">🍊</div>
+                <div class="slot">🍉</div>
+                <div class="slot">⭐</div>
+            </div>
+            <button id="spin-button" onclick="spinSlotMachine()">Putar Mesin Slot</button>
+        </div>
+        <p>Anda mendapatkan Rp <span id="payout">0</span>!</p>
+        <p>Total Kemenangan: Rp <span id="total-winnings">0</span></p>
+        <p>Saldo akhir: Rp <span id="final-balance">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
